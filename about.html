@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>برگر النجف - اطيب وجبات سريعة</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+    body{background:#1a1a1a;color:#fff}
+
+    /* الهيدر السلايدر */
+ .slider{position:relative;height:500px;overflow:hidden;color:#fff;text-align:center}
+ .slide{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;opacity:0;transition:opacity 1s ease-in-out}
+ .slide.active{opacity:1}
+ .slider::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6)}
+ .slider-content{position:relative;z-index:2;top:50%;transform:translateY(-50%)}
+ .slider-content h1{font-size:50px;margin-bottom:10px;color:#ff2e2e}
+ .slider-content p{font-size:20px;margin-bottom:25px}
+ .btn{background:#ff2e2e;color:#fff;padding:15px 35px;border-radius:30px;text-decoration:none;font-weight:bold;display:inline-block;font-size:18px}
+ .btn:hover{background:#cc0000}
+
+    section{padding:60px 20px;max-width:1200px;margin:auto}
+    h2{text-align:center;color:#ff2e2e;margin-bottom:40px;font-size:36px}
+ .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+ .card{background:#2a2a2a;border-radius:20px;box-shadow:0 4px 20px rgba(255,46,46,0.2);padding:15px;text-align:center;transition:0.3s;border:1px solid #333}
+ .card:hover{transform:scale(1.05)}
+ .card img{width:100%;height:220px;object-fit:cover;border-radius:15px;margin-bottom:15px}
+ .card h3{font-size:22px;margin-bottom:5px;color:#fff}
+ .card p{color:#aaa}
+ .price{color:#ff2e2e;font-weight:bold;font-size:24px;margin-top:10px}
+ .contact{background:#ff2e2e;color:#fff;text-align:center;padding:50px 20px;border-radius:15px}
+ .whatsapp{position:fixed;bottom:20px;left:20px;background:#25D366;color:#fff;padding:15px 25px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 15px rgba(0,0,0,0.5);z-index:999;font-size:16px}
+    footer{text-align:center;padding:20px;background:#000;color:#aaa;margin-top:30px}
+  </style>
+</head>
+<body>
+
+<!-- الهيدر ب 3 صور -->
+<header class="slider">
+  <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200')"></div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=1200')"></div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1550547660-d9450f859349?w=1200')"></div>
+
+  <div class="slider-content">
+    <h1>برگر النجف</h1>
+    <p>اطيب برگر وبيتزا وجبات سريعة توصيل سريع</p>
+    <a href="https://wa.me/9647813258591" class="btn">اطلب الان - توصيل مجاني</a>
+  </div>
+</header>
+
+<section>
+  <h2>قائمة الطعام</h2>
+  <div class="menu">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800" alt="برگر">
+      <h3>برگر دبل لحم</h3>
+      <p>مع جبن وخس وطماطة وصوص خاص</p>
+      <div class="price">12,000 د.ع</div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800" alt="بيتزا">
+      <h3>بيتزا مارغريتا</h3>
+      <p>وسط - 8 قطع - جبن موزاريلا</p>
+      <div class="price">15,000 د.ع</div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547496502-affa22d38842?w=800" alt="شاورما">
+      <h3>شاورما عربي</h3>
+      <p>لحم او دجاج مع بطاطا ومقبلات</p>
+      <div class="price">8,000 د.ع</div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1633321702518-7feccafb94d5?w=800" alt="بروستد">
+      <h3>وجبة بروستد</h3>
+      <p>4 قطع + بطاطا + مشروب + خبز</p>
+      <div class="price">14,000 د.ع</div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=800" alt="مشروب">
+      <h3>مشروبات باردة</h3>
+      <p>بيبسي - سفن - ميرندا</p>
+      <div class="price">2,000 د.ع</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>اتصل بنا</h2>
+  <p>📍 النجف - شارع المطار</p>
+  <p>⏰ الدوام: من 11 الصبح الى 2 بالليل</p>
+  <p>📞 07813258591</p>
+  <p>🚚 توصيل لجميع مناطق النجف</p>
+</section>
+
+<a href="https://wa.me/9647813258591" class="whatsapp">واتساب الطلبات</a>
+
+<footer>
+  <p>© 2026 برگر النجف - تصميم Najaf Web</p>
+</footer>
+
+<script>
+// كود السلايدر التلقائي
+let slides = document.querySelectorAll('.slide');
+let current = 0;
+setInterval(()=>{
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
+}, 3000);
+</script>
+
+</body>
+</html>
